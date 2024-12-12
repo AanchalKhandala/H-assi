@@ -191,7 +191,7 @@ app.post('/contactmech', async (req, res) => {
 // // Get all contact mechanisms
 // app.get('/contactmech/:id', async (req, res) => {
 //   try {
-//     const contactMechs = await ContactMech.find().populate('customer_id', 'first_name last_name'); // Populate customer info
+//     const contactMechs = await ContactMech.find().populate('customer_id', 'first_name last_name'); 
 //     res.status(200).json(contactMechs);
 //   } catch (err) {
 //     res.status(500).json({ message: "Error retrieving contact mechanisms", error: err.message });
@@ -213,7 +213,7 @@ app.post('/contactmech', async (req, res) => {
 // API Routes
 //require('./routes/orders')(app, Customer, Product, Order);
 
-// Start server
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
